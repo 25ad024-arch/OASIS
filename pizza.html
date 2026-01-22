@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Ordering App</title>
+  <link rel="stylesheet" href="pizza.css">
+</head>
+<body>
+  <header>
+    <h1>Pizza Ordering System</h1>
+    <nav>
+      <button id="login-btn">Login</button>
+      <button id="register-btn">Register</button>
+    </nav>
+  </header>
+
+  <!-- Login Section -->
+  <section id="login-section" class="auth-section">
+    <h2>User/Admin Login</h2>
+    <input type="email" id="login-email" placeholder="Email">
+    <input type="password" id="login-password" placeholder="Password">
+    <button id="login-submit">Login</button>
+    <p><a href="#">Forgot Password?</a></p>
+  </section>
+
+  <!-- Register Section -->
+  <section id="register-section" class="auth-section">
+    <h2>Register</h2>
+    <input type="text" id="register-name" placeholder="Name">
+    <input type="email" id="register-email" placeholder="Email">
+    <input type="password" id="register-password" placeholder="Password">
+    <button id="register-submit">Register</button>
+  </section>
+
+  <!-- User Dashboard -->
+  <section id="user-dashboard" class="dashboard">
+    <h2>Welcome, <span id="user-name">User</span></h2>
+    <h3>Available Pizzas</h3>
+    <div class="pizza-list">
+      <div class="pizza-card">Margherita</div>
+      <div class="pizza-card">Pepperoni</div>
+      <div class="pizza-card">Veggie</div>
+      <div class="pizza-card">Cheese Burst</div>
+      <div class="pizza-card">BBQ Chicken</div>
+    </div>
+
+    <h3>Customize Your Pizza</h3>
+    <form id="custom-pizza-form">
+      <label>Choose Base:</label>
+      <select>
+        <option>Thin Crust</option>
+        <option>Cheese Crust</option>
+        <option>Pan Pizza</option>
+        <option>Stuffed Crust</option>
+        <option>Gluten-Free</option>
+      </select>
+
+      <label>Choose Sauce:</label>
+      <select>
+        <option>Tomato</option>
+        <option>Barbecue</option>
+        <option>Alfredo</option>
+        <option>Pesto</option>
+        <option>Spicy</option>
+      </select>
+
+      <label>Choose Cheese:</label>
+      <select>
+        <option>Mozzarella</option>
+        <option>Cheddar</option>
+        <option>Parmesan</option>
+        <option>Vegan Cheese</option>
+        <option>Provolone</option>
+      </select>
+
+      <label>Select Veggies:</label>
+      <div class="veggies">
+        <label><input type="checkbox"> Onions</label>
+        <label><input type="checkbox"> Bell Peppers</label>
+        <label><input type="checkbox"> Tomatoes</label>
+        <label><input type="checkbox"> Olives</label>
+        <label><input type="checkbox"> Jalapenos</label>
+      </div>
+
+      <button type="submit" id="checkout-btn">Proceed to Payment</button>
+    </form>
+  </section>
+
+  <!-- Admin Dashboard -->
+  <section id="admin-dashboard" class="dashboard">
+    <h2>Admin Dashboard</h2>
+    <h3>Inventory Management</h3>
+    <table>
+      <tr>
+        <th>Item</th>
+        <th>Available Stock</th>
+      </tr>
+      <tr>
+        <td>Pizza Base</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Sauce</td>
+        <td>40</td>
+      </tr>
+      <tr>
+        <td>Cheese</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>Veggies</td>
+        <td>60</td>
+      </tr>
+      <tr>
+        <td>Meat</td>
+        <td>20</td>
+      </tr>
+    </table>
+
+    <h3>Orders</h3>
+    <div class="orders-list">
+      <div class="order-card">
+        <p>Order #101 - Margherita</p>
+        <select>
+          <option>Order Received</option>
+          <option>In Kitchen</option>
+          <option>Sent to Delivery</option>
+        </select>
+      </div>
+      <div class="order-card">
+        <p>Order #102 - Pepperoni</p>
+        <select>
+          <option>Order Received</option>
+          <option>In Kitchen</option>
+          <option>Sent to Delivery</option>
+        </select>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

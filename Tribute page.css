@@ -1,0 +1,117 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #f0f8ff; /* pastel background */
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: #4da6ff; /* pastel blue header */
+}
+
+.logo {
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #cce4f6;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #a7c7e7; /* pastel blue */
+  color: white;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+/* Content Section */
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 50px 20px;
+}
+
+.box {
+  background-color: white;
+  padding: 30px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.box h2 {
+  margin-bottom: 15px;
+  color: #4da6ff;
+}
+
+.box p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.box img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* Demo Section */
+.demo {
+  text-align: center;
+  padding: 40px;
+}
+
+.demo button {
+  padding: 12px 30px;
+  font-size: 16px;
+  background-color: #4da6ff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.demo button:hover {
+  background-color: #0077ff;
+}
+
+/* Footer */
+footer {
+  background-color: #4da6ff;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Functional Calculator Poster</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+  body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .calculator {
+    background: rgba(0,0,0,0.5);
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    text-align: center;
+    max-width: 350px;
+    width: 100%;
+  }
+
+  h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px #000;
+  }
+
+  .display {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: right;
+    min-height: 50px;
+    color: white;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+    overflow-x: auto;
+  }
+
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+
+  button {
+    padding: 20px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    border: none;
+    background: #00f0ff;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  button:hover {
+    background: #00c0ff;
+  }
+
+  .operator {
+    background: #ff6a00;
+    color: #fff;
+  }
+
+  .operator:hover {
+    background: #ff9500;
+  }
+
+  .wide {
+    grid-column: span 2;
+  }
+</style>
+</head>
+<body>
+
+<div class="calculator">
+  <h1>🖩 Calculator</h1>
+  <div class="display" id="display">0</div>
+  <div class="buttons">
+    <button onclick="appendNumber('7')">7</button>
+    <button onclick="appendNumber('8')">8</button>
+    <button onclick="appendNumber('9')">9</button>
+    <button class="operator" onclick="chooseOperator('/')">/</button>
+
+    <button onclick="appendNumber('4')">4</button>
+    <button onclick="appendNumber('5')">5</button>
+    <button onclick="appendNumber('6')">6</button>
+    <button class="operator" onclick="chooseOperator('*')">*</button>
+
+    <button onclick="appendNumber('1')">1</button>
+    <button onclick="appendNumber('2')">2</button>
+    <button onclick="appendNumber('3')">3</button>
+    <button class="operator" onclick="chooseOperator('-')">-</button>
+
+    <button onclick="appendNumber('0')">0</button>
+    <button onclick="appendNumber('.')">.</button>
+    <button class="operator" onclick="chooseOperator('+')">+</button>
+    <button class="operator" onclick="compute()">=</button>
+
+    <button class="wide operator" onclick="clearDisplay()">C</button>
+  </div>
+</div>
+
+<script>
+let display = document.getElementById('display');
+let currentOperand = '';
+let previousOperand = '';
+let operator = null;
+
+function appendNumber(number) {
+    if(number === '.' && currentOperand.includes('.')) return;
+    currentOperand += number;
+    updateDisplay();
+}
+
+function chooseOperator(op) {
+    if(currentOperand === '') return;
+    if(previousOperand !== '') {
+        compute();
+    }
+    operator = op;
+    previousOperand = currentOperand;
+    currentOperand = '';
+}
+
+function compute() {
+    let computation;
+    const prev = parseFloat(previousOperand);
+    const current = parseFloat(currentOperand);
+    if(isNaN(prev) || isNaN(current)) return;
+
+    switch(operator) {
+        case '+':
+            computation = prev + current;
+            break;
+        case '-':
+            computation = prev - current;
+            break;
+        case '*':
+            computation = prev * current;
+            break;
+        case '/':
+            computation = prev / current;
+            break;
+        default:
+            return;
+    }
+    currentOperand = computation.toString();
+    operator = null;
+    previousOperand = '';
+    updateDisplay();
+}
+
+function clearDisplay() {
+    currentOperand = '';
+    previousOperand = '';
+    operator = null;
+    updateDisplay();
+}
+
+function updateDisplay() {
+    display.textContent = currentOperand || '0';
+}
+</script>
+
+</body>
+</html>

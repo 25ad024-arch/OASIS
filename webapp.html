@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do Web App Poster</title>
+  <link rel="stylesheet" href="webapp.css">
+</head>
+<body>
+
+  <div class="poster">
+    <header>
+      <h1>To-Do Web App</h1>
+    </header>
+
+    <div class="add-task">
+      <input type="text" placeholder="Add a new task..." />
+      <button>Add Task</button>
+    </div>
+
+    <div class="tasks-section">
+      <div class="tasks pending">
+        <h2>Pending Tasks</h2>
+        <div class="task">
+          <span>Finish Homework</span>
+          <small>Jan 8 at 10:30 AM</small>
+          <div class="actions">
+            <button class="complete">✔</button>
+            <button class="edit">✎</button>
+            <button class="delete">🗑</button>
+          </div>
+        </div>
+        <div class="task">
+          <span>Go for a Jog</span>
+          <small>Jan 8 at 8:00 AM</small>
+          <div class="actions">
+            <button class="complete">✔</button>
+            <button class="edit">✎</button>
+            <button class="delete">🗑</button>
+          </div>
+        </div>
+        <div class="task">
+          <span>Buy Groceries</span>
+          <small>Jan 8 at 7:00 AM</small>
+          <div class="actions">
+            <button class="complete">✔</button>
+            <button class="edit">✎</button>
+            <button class="delete">🗑</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="tasks completed">
+        <h2>Completed Tasks</h2>
+        <div class="task">
+          <span>Clean the Kitchen</span>
+          <small>Jan 7, 5:00 PM → Jan 7, 8:15 PM</small>
+          <div class="actions">
+            <button class="complete">✔</button>
+            <button class="edit">✎</button>
+            <button class="delete">🗑</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="demo-button">
+      <p>For Demo Click</p>
+      <button>GET STARTED</button>
+    </div>
+  </div>
+
+</body>
+</html>

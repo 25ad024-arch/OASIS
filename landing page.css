@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1e3c72, #8e44ad);
+  color: white;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #a7c7e7;
+  text-shadow: 0 4px 10px rgba(167, 199, 231, 0.5);
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.tags {
+  margin-top: 30px;
+}
+
+.tags span {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 8px;
+}
+
+/* Content */
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+}
+
+.box {
+  background: rgba(255,255,255,0.15);
+  padding: 30px;
+  width: 300px;
+  border-radius: 12px;
+}
+
+.box h2 {
+  margin-bottom: 15px;
+}
+
+.box ul li {
+  margin-bottom: 10px;
+}
+
+/* Demo Section */
+.demo {
+  text-align: center;
+  padding: 40px;
+}
+
+.demo button {
+  background: #2ecc71;
+  border: none;
+  padding: 15px 40px;
+  font-size: 18px;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+footer a {
+  color: #a7c7e7;
+  text-decoration: none;
+}

@@ -1,0 +1,276 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa;
+}
+
+header {
+  background: #ff4757;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header nav button {
+  background: white;
+  color: #ff4757;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+header nav button:hover {
+  background: #ffecec;
+}
+
+.auth-section {
+  width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.auth-section input {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.auth-section button {
+  width: 100%;
+  padding: 10px;
+  background: #ff4757;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth-section button:hover {
+  background: #e84118;
+}
+
+.dashboard {
+  width: 90%;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.pizza-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pizza-card {
+  background: #ff6b81;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  flex: 1 1 120px;
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.veggies label {
+  display: inline-block;
+  margin: 5px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa;
+}
+
+header {
+  background: #ff4757;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header nav button {
+  background: white;
+  color: #ff4757;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+header nav button:hover {
+  background: #ffecec;
+}
+
+.auth-section {
+  width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.auth-section input {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.auth-section button {
+  width: 100%;
+  padding: 10px;
+  background: #ff4757;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth-section button:hover {
+  background: #e84118;
+}
+
+.dashboard {
+  width: 90%;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.pizza-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pizza-card {
+  background: #ff6b81;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  flex: 1 1 120px;
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.veggies label {
+  display: inline-block;
+  margin: 5px;
+}
+
+#checkout-btn {
+  margin-top: 15px;
+  width: 100%;
+  background: #2ed573;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#checkout-btn:hover {
+  background: #1eae5b;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.order-card {
+  background: #70a1ff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+#checkout-btn {
+  margin-top: 15px;
+  width: 100%;
+  background: #2ed573;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#checkout-btn:hover {
+  background: #1eae5b;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.order-card {
+  background: #70a1ff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
